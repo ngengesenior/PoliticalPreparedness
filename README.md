@@ -78,6 +78,9 @@ RelativeLayout for the item.
 
 I also factored the VoterInfo Fragment and called it ElectionDetailFragment.
 
+### API Key
+Replace the API Key in CivicsHttpClient file
+
 
 ## Report Issues
 Notice any issues with a repository? Please file a github issue in the repository.
