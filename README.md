@@ -68,6 +68,10 @@ The PoliticalPreparedness app has been implemented using the desired pattern. He
 ![Representatives](/screenshots/representatives_scrolled.png)
 
 
+### Android Studio Version
+The code has be written with Android studio 4.0
+
+
 ## Consideration
 In my efforts to create the list item for the representative using ConstraintLayout, I kept having misbehaviors and had to revert to using
 RelativeLayout for the item.
