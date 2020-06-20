@@ -65,7 +65,14 @@ The PoliticalPreparedness app has been implemented using the desired pattern. He
 
 ### Motion layout scrolled
 
-![Represenatatives](/screenshots/representatives_scrolled.png)
+![Representatives](/screenshots/representatives_scrolled.png)
+
+
+## Consideration
+In my efforts to create the list item for the representative using ConstraintLayout, I kept having misbehaviors and had to revert to using
+RelativeLayout for the item.
+
+I also factored the VoterInfo Fragment and called it ElectionDetailFragment.
 
 
 ## Report Issues
