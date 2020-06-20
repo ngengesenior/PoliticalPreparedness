@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="election_item_padding">8dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="padding_scene">4dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="icon_size">30dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+
+    <!-- TODO: Add necessary dimension values -->s
+
+</resources>

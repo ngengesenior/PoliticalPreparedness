@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="representative"
+            type="com.example.android.politicalpreparedness.representative.model.Representative" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/ic_profile"
+            android:id="@+id/profile_image"
+            profileImage="@{representative.official.photoUrl}"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/profile_image"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@id/profile_image"
+            android:id="@+id/office_name"
+            android:text="@{representative.office.name}"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            tools:text="President of the United States"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/office_name"
+            tools:text="Donald Trump"
+            android:text="@{representative.official.name}"
+            android:id="@+id/politician_name"
+            android:layout_alignStart="@id/office_name"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/politician_name"
+            tools:text="Republican Party"
+            android:text="@{representative.official.party}"
+            android:layout_alignStart="@id/politician_name"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_twitter"
+            android:id="@+id/twitterIcon"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/icon_size" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            app:srcCompat="@drawable/ic_facebook"
+            android:contentDescription="@null"
+            android:id="@+id/facebookIcon"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/twitterIcon"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_height="@dimen/icon_size" />
+
+        <ImageView
+            android:contentDescription="@null"
+
+            android:layout_width="@dimen/icon_size"
+            android:id="@+id/wwwIcon"
+            app:srcCompat="@drawable/ic_www"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_toStartOf="@id/facebookIcon"
+            android:layout_height="@dimen/icon_size" />
+
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
