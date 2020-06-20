@@ -49,7 +49,7 @@ The PoliticalPreparedness app has been implemented using the desired pattern. He
 
 ### Launcher screen
 
-![Launcher](./screenshots/lancher.png = 100x100)
+![Launcher](./screenshots/lancher.png =100x100)
 
 ### Elections Screen
 
