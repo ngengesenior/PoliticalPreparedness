@@ -9,8 +9,10 @@ import com.example.android.politicalpreparedness.database.ElectionDao
 import com.example.android.politicalpreparedness.network.CivicsApiService
 import com.example.android.politicalpreparedness.network.models.Election
 import com.example.android.politicalpreparedness.utils.ElectionsApiStatus
-import kotlinx.coroutines.*
-import kotlin.Exception
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 
 
 //TODO: Construct ViewModel and provide election datasource
@@ -47,19 +49,6 @@ class ElectionsViewModel(private val civicsApiService: CivicsApiService, private
         }
     }
 
-    fun saveElection() {
-        Log.d("SAVING", "saveElection: ")
-        viewModelScope.launch {
-            if (isSaved.value!!){
-                dao.deleteById(election.id)
-                Log.d("SAVING", "saveElection: Deleted")
-            } else {
-                dao.insert(election)
-                Log.d("SAVING", "saveElection:inserted ")
-            }
-            isSaved.value = !isSaved.value!!
-        }
-    }
 
 
     //TODO: Create val and functions to populate live data for upcoming elections from the API and saved elections from local database

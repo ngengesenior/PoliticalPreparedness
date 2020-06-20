@@ -1,6 +1,5 @@
 package com.example.android.politicalpreparedness.utils
 
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -52,7 +51,6 @@ fun bindElections(recyclerView: RecyclerView,elections:LiveData<List<Election>>?
 fun bindStatusImage(statusImage: ImageView,electionsApiStatus: ElectionsApiStatus?) {
     when(electionsApiStatus) {
         ElectionsApiStatus.LOADING -> {
-            Log.d("LOADING", "bindStatusImage: Image is LOADING")
             statusImage.visibility = View.VISIBLE
             statusImage.setImageResource(R.drawable.loading_animation)
         }

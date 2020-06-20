@@ -15,6 +15,7 @@
         <!-- TODO: Add Button to navigate to representatives. -->
 
         <ImageView
+            android:contentDescription="@null"
             android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -32,9 +33,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             style="@style/PrimaryButtonStyle"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
             android:text="@string/find_my_representatives"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,9 +45,9 @@
             android:id="@+id/upcomingButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
             android:text="@string/upcoming_elections_title"
             style="@style/PrimaryButtonStyle"
             app:layout_constraintBottom_toTopOf="@+id/representativeButton"
